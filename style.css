@@ -1,6 +1,6 @@
 :root {
-    --ff-primary: font-family: 'Open Sans', sans-serif;
-    --ff-accent: font-family: 'Merriweather', serif;
+    --ff-primary: 'Open Sans', sans-serif;
+    --ff-accent: 'Merriweather', serif;
 }
 
 *,
@@ -16,6 +16,12 @@ h2,
 h3,
 p {
     margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--ff-accent);
 }
 
 body {
