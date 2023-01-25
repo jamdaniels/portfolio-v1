@@ -1,5 +1,3 @@
-console.log("hi");
-
 function menuToggle() {
     var x = document.getElementById("topnav");
     if (x.className === "topnav") {

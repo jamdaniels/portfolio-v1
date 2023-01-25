@@ -1,3 +1,8 @@
+:root {
+    --ff-primary: font-family: 'Open Sans', sans-serif;
+    --ff-accent: font-family: 'Merriweather', serif;
+}
+
 *,
 *::before,
 *::after {
@@ -13,6 +18,9 @@ p {
     margin: 0;
 }
 
+body {
+    font-family: var(--ff-primary);
+}
 
 .nav {
     overflow: hidden;
@@ -24,9 +32,10 @@ p {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1.5rem 2rem;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1rem;
+    text-transform: uppercase;
 }
 
 .nav a:hover {
@@ -50,7 +59,7 @@ p {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
     .nav a:not(:first-child) {display: none;}
     .nav a.icon {
         float: right;
@@ -58,7 +67,7 @@ p {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
     .nav.responsive {position: relative;}
     .nav.responsive .icon {
         position: absolute;
